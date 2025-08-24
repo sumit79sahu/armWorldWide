@@ -697,17 +697,33 @@ body {
   height: 14px !important;
 }
 
-/* .impact-numbers {
-  background: url('../img/dotted-bg.png') no-repeat center/cover;
-  padding: 80px 20px;
+.impact-numbers {
   position: relative;
+  padding: 5px 0px;
+  z-index: 1; /* keeps content above */
+}
 
-} */
+@media (max-width:580px)
+{
+  .impact-numbers
+  {
+     padding: 50px 0px !important; 
+  }
+}
+.impact-numbers::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: url('../img/dotted-pattern-2.png') no-repeat center/cover;
+  opacity: 0.1;   /* only background is light */
+  z-index: -1;    /* pushes bg behind content */
+}
 
 .impact-numbers .container {
   display: flex;
   justify-content: space-between;
   /* align-items: flex-start; */
+  /* opacity: 1; */
   margin-top: 100px;
   /* border: 1px solid red; */
 }
@@ -1679,3 +1695,18 @@ display: none;
   max-width: fit-content;
 }
 }
+@media (max-width:480px) {
+
+  .mobile-version .swiper-wrapper{
+    margin-top: -10px;
+    margin-bottom: -40px;
+  }
+  .mobile-version .swiper-pagination 
+  {
+    padding-bottom: 5px;
+  }
+}
+
+
+
+
