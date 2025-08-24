@@ -12,6 +12,7 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -1639,7 +1640,7 @@ display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .timeline-section {
     /* padding: 30px 15px; */
     display: none;
