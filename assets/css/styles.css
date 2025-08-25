@@ -1204,6 +1204,7 @@ margin-left: 20px;
 }
 
 .timeline-section-2 {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 0px 40px;
@@ -1257,7 +1258,7 @@ margin-left: 20px;
   content: "1878";
   position: absolute;
 
-  /* top: 100%; */
+  /* top: 50%; */
   left: 48%;
   transform: translate(-50%, -50%);
   font-family: Helvetica, Arial, sans-serif;
@@ -1415,7 +1416,7 @@ display: none;
 /* For screens smaller than 480px (e.g., mobile phones) */
 @media (max-width: 768px) {
   .timeline-section::before {
-    font-size: 240px;
+    font-size: 340px;
   }
 }
 @media (max-width: 480px) {
