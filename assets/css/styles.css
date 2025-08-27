@@ -1210,6 +1210,7 @@ object-fit: cover;
   position: relative;
  
   padding: 0px 100px;
+  padding-bottom: 100px;
     margin-top: 130px !important;
 }
 
@@ -1722,7 +1723,14 @@ display: none;
      top:455px;
   }
 }
-
+@media(max-width:767px)
+{
+  .timeline-dots
+  {
+     top:640px;
+     left: 150px;
+  }
+}
 .timeline-dot {
   position: relative;
   width: 60px;
@@ -1971,7 +1979,22 @@ display: none;
 }
 
 
-
+.timeline
+{
+  margin-bottom: 100px;
+}
+@media (max-width:767px) {
+ .timeline
+{
+  margin-bottom: 100px;
+} 
+}
+@media (max-width:480px) {
+ .timeline
+{
+  margin-bottom: 70px;
+} 
+}
 
 .timeline div{
   position: absolute; 
@@ -1988,19 +2011,36 @@ display: none;
 @media (max-width:767px)
 {
   .timeline div{
-    top: -10px !important;
+    top: -85px !important;
   }
 }
 
-.timeline{
-   margin-bottom: 100px;
-}
 
-@media (max-width:767px)
+@media (max-width:480px)
 {
-  .timeline
+  .swiper-button-next:after, .swiper-button-prev:after
   {
-    margin-bottom: 120px;
+    font-size: 30px !important;
   }
 }
+
+.myImpactSwiper
+{
+  max-width: 1000px  !important;
+display: flex;
+justify-content: center;
+padding: 0 80px;
+}
+
+.myImpactSwiper .swiper-slide {
+  background:   linear-gradient(180deg, rgba(0, 94, 177, 0) 64.46%, rgba(0, 94, 177, 0.8) 100%),url("../img/fch.jpg"); /* relative path */
+  height: 583px;
+  background-size: cover;      /* make image fill slide */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; 
+ /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  */
+  border-radius: 33px;
+}
+
+
 
